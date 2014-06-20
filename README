@@ -1,1 +1,21 @@
-Este repositorio contiene los ejercicios del curso R Programming de Coursera.
+
+This repository contains the files associated to the Course Project in the Coursera course "Getting and Cleaning Data".
+
+The files in the repository are:
+
+1. README - This file
+2. CodeBook -
+3. run_analysis.R - This file perfoms the analysis over the data provided. To run it:
+    a. Uncompress the provided data.
+    b. Put run_analysis.R on the same directory the folder "UCI HAR Dataset" is.
+    c. From R prompt execute source("run_analysis.R").
+  After a few seconds two data frames will be created:
+    "data" containing:
+      Training and testing data merged.
+      Variable names are descriptive.
+      Activity names are descriptive.
+    "data.second" containing:
+      The average of each variable in "data" for each activity and each subject. 
+  The script also creates a file called "tidy_data_set.txt" containing "data.second".
+  This file can be loaded with read.table. It is the one uploaded 
+  
